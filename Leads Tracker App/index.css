@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #d4e157, #8bc34a);
+  font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 360px;
+  padding: 20px;
+}
+
+h2 {
+  color: #255807;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+section {
+  width: 100%;
+  max-width: 750px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section:hover {
+  transform: scale(1.005);
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #5f9341;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+}
+
+input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 14px;
+  border: 2px solid #5f9341;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #255807;
+  box-shadow: 0 0 8px rgba(95, 147, 65, 0.5);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  background: #5f9341;
+  color: white;
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #4a7a36;
+}
+
+#delete-btn {
+  background: white;
+  color: #5f9341;
+  border: 2px solid #5f9341;
+}
+
+#delete-btn:hover {
+  background: #e6e6e6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+li {
+  background: #f4f4f4;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 5px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+a {
+  color: #5f9341;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  display: block;
+}
+
+a:hover {
+  color: #3d6d2a;
+}
